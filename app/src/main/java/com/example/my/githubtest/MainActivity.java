@@ -57,4 +57,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestart() {
         super.onRestart();
     }
+
+    public void clickView(View view) {
+        Toast.makeText(context, "123", Toast.LENGTH_SHORT).show();
+    }
 }
