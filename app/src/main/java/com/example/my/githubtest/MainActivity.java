@@ -1,5 +1,6 @@
 package com.example.my.githubtest;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,18 +13,24 @@ public class MainActivity extends AppCompatActivity {
     private TextView textView_main;
     private ImageView image_main;
     private Button button_main;
+    private Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+        initData();
         button_main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "ceshi", Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+    private void initData() {
+        context = this;
     }
 
     private void initView() {
