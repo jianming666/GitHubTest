@@ -2,29 +2,23 @@ package com.example.my.githubtest;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
-    private Button button_test;
+    private TextView textView_main;
+    private ImageView image_main;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
-        button_test.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "测试", Toast.LENGTH_LONG).show();
-            }
-        });
     }
 
     private void initView() {
-        button_test = (Button) findViewById(R.id.button_test);
+        textView_main = (TextView) findViewById(R.id.textView_main);
+        image_main = (ImageView) findViewById(R.id.image_main);
     }
 
     @Override
