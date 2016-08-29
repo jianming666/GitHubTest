@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private TextView textView_main;
+    private TextView username;
+    private TextView password;
     private ImageView image_main;
     private Button button_main;
     private Context context;
@@ -41,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
         textView_main = (TextView) findViewById(R.id.textView_main);
         image_main = (ImageView) findViewById(R.id.image_main);
         button_main = (Button) findViewById(R.id.button_main);
+
+        username = (TextView) findViewById(R.id.username);
+        password = (TextView) findViewById(R.id.password);
     }
 
     @Override
