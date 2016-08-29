@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
+//测试
 public class MainActivity extends AppCompatActivity {
     private TextView textView_main;
     private TextView username;
