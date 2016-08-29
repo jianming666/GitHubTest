@@ -21,4 +21,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"/>
+
+    <ImageView
+        android:id="@+id/image_main_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
 </RelativeLayout>

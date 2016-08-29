@@ -8,6 +8,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private TextView textView_main;
     private ImageView image_main;
+    private ImageView image_main_icon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private void initView() {
         textView_main = (TextView) findViewById(R.id.textView_main);
         image_main = (ImageView) findViewById(R.id.image_main);
+        image_main_icon = (ImageView) findViewById(R.id.image_main_icon);
     }
 
     @Override
