@@ -2,23 +2,34 @@ package com.example.my.githubtest;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private TextView textView_main;
     private ImageView image_main;
+    private Button button_main;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+        button_main.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "ceshi", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     private void initView() {
         textView_main = (TextView) findViewById(R.id.textView_main);
         image_main = (ImageView) findViewById(R.id.image_main);
+        button_main = (Button) findViewById(R.id.button_main);
     }
 
     @Override
