@@ -1,5 +1,6 @@
 package com.example.my.githubtest;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -31,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle("Hello").setIcon(R.mipmap.ic_launcher);
                 builder.show();
+
+                ProgressDialog progressDialog=new ProgressDialog(context);
+                progressDialog.show();
             }
         });
     }
